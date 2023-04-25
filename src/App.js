@@ -9,6 +9,7 @@ function App() {
   const [result, setResult] = useState("");
  
   const calculatorbutton = ['9', '8', '7', '6', '5', '4', '3', '2', '1', '0', '.', '+', '-', '*', '/', '%']
+  
   const clickHandle = (event) => {
     setResult(result.concat(event.target.value))
     
@@ -32,8 +33,10 @@ function App() {
      }
       </div>
        <div id='delButton'>
+
       <input type='button' value={"DEL"} className='button button1' onClick={clearDisplay}/>
       <input type='button' value={"="} className='button button1' onClick={calculate}/>
+      
       </div>
 
 
